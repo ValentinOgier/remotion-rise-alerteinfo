@@ -1,5 +1,4 @@
 import express, { Request, Response } from 'express';
-import cors from 'cors';
 import { bundle } from '@remotion/bundler';
 import { getCompositions, renderStill, renderMedia, RenderMediaOnProgress } from '@remotion/renderer';
 import path from 'path';
@@ -7,7 +6,6 @@ import fs from 'fs/promises';
 import { NewsSchema } from './schema';
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 const OUTPUT_DIR = path.join(__dirname, '../out');
