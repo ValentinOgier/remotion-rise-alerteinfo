@@ -22,7 +22,7 @@ npm -v
 npx -v
 
 # Cloner le dépôt Git
-git clone XXXXXXXXX
+git clone https://github.com/ValentinOgier/remotion-rise-alerteinfo.git
 cd remotion-rise-alerteinfo
 
 # Installer les dépendances
