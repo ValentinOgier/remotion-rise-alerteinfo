@@ -1,45 +1,54 @@
-# Générateur d'Infographies Rise
+# Remotion video
 
-Ce projet est un générateur d'infographies dynamiques utilisant Remotion pour le rendu des images et des vidéos. Il permet de créer des infographies personnalisées avec une interface utilisateur intuitive.
+<p align="center">
+  <a href="https://github.com/remotion-dev/logo">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
+      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
+    </picture>
+  </a>
+</p>
 
-## Architecture
+Welcome to your Remotion project!
 
-Le projet est composé de deux parties principales :
+## Commands
 
-1. **Interface utilisateur (Frontend)**
-   - Interface web responsive en HTML/CSS/JavaScript
-   - Gestion des formulaires et des interactions utilisateur
-   - Prévisualisation en temps réel
-   - Gestion des exports (images et vidéos)
+**Install Dependencies**
 
-2. **Serveur de rendu Remotion (Backend)**
-   - API REST pour le rendu des compositions
-   - Gestion des files d'attente de rendu
-   - Stockage temporaire des fichiers générés
-
-## Prérequis
-
-- Node.js >= 16.x
-- PHP >= 8.1
-- Composer
-
-## Installation et développement
-
-1. **Installation des dépendances Node.js**
-```bash
-npm install
+```console
+npm i
 ```
 
-2. **Démarrage du serveur de développement**
-```bash
-# Dans un terminal, démarrez le serveur Remotion
+**Start Preview**
+
+```console
 npm run dev
 ```
 
-L'application sera accessible à l'adresse : `https://**HÔTE**:3001`
+**Render video**
 
-## Configuration
-Configurez la variable suivante dans les fichiers html
-```bash
-const REMOTION_API_URL = 'http://localhost:3001';
+```console
+npx remotion render
 ```
+
+**Upgrade Remotion**
+
+```console
+npx remotion upgrade
+```
+
+## Docs
+
+Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
+
+## Help
+
+We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
+
+## Issues
+
+Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
+
+## License
+
+Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
