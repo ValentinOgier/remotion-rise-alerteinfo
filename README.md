@@ -9,46 +9,28 @@
   </a>
 </p>
 
-Welcome to your Remotion project!
+Welcome to Rise Remotion News Project
 
 ## Commands
+# Installer Node.js, npm et npx
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
-**Install Dependencies**
+# Vérifier l'installation
+node -v
+npm -v
+npx -v
 
-```console
-npm i
-```
+# Cloner le dépôt Git
+git clone XXXXXXXXX
+cd remotion-rise-alerteinfo
 
-**Start Preview**
+# Installer les dépendances
+npm install
 
-```console
+# Ouvrir le port 3000 sur le pare-feu
+sudo ufw allow 3000/tcp
+sudo ufw reload
+
+# Lancer l'application
 npm run dev
-```
-
-**Render video**
-
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
